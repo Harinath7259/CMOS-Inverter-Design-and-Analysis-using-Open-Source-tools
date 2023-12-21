@@ -101,7 +101,7 @@ CMOS stands for complementary Metal Oxide Semiconductur which means it consists 
                                                    
 #
 #
-## 2. VTC Analysis of CMOS                                                                                                                                                                           
+## 2. VTC Analysis on CMOS                                                                                                                                                                           
 VTC stands for Voltage Transfer Characterstics means how the input voltage transfer to output voltage . Here we are using a constant Vdd voltage 1.8v .                                                 
 Before that I am creating a symbol for this CMOS inverter by clicking "A" on my system .Then it will create a symbol and I can get it on my library  and use it for Schematic. Schematic od design before simulation.                                                                                                                                                                                  
 ![Screenshot from 2023-09-28 17-53-57](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/8cc7e4d6-2975-4c45-9dbc-60582e5e7612)                                                                                                                                                                                                                           
@@ -109,10 +109,26 @@ Characterstic curve after simulation could be like shown below
 #
 ![Screenshot from 2023-12-12 16-26-38](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/32b057af-c525-4e30-adad-edb98fa07461)
 #
-#
-## 3. Delay Analysis of CMOS
-                                                                                                                                                                                                                                         
+Here we can find Threshold voltage Vth i.e voltage vin where vout and vin curve got intersected
 
+#
+## 3. NOISE Analysis on CMOS                                                                                                                                                                                 
+In Noise Analysis we are finding the region where the output is indeterministic to the input provides. For that firstly we need to findout the gain which the derivative of Vout of CMOS inverter.                                                                                                                                                                                                                                
+  #                                                                                                                                                                                                                                       
+![Screenshot from 2023-12-13 13-22-21](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/57ef63db-edfd-4e9d-86be-2135b513b9df)
+                                                                                                                                                                                                                 
+then  plot  the absoulte value of gain 
+![Screenshot from 2023-12-13 13-29-27](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/9f779639-e1a3-4872-9139-09d1155ac721)                                                                                                                                                                                                                                                                                                     
+then plot gain and vout in same graph to finout **VIL** and **VIH**                                                                                                                                         
+**VIL** is the highest input which is considered as  lowest logic input                                                                                                                            
+**VIH** is the lowest input which is considered as highest logic input                                                                                                                                                                                                                              
+#
+![Screenshot from 2023-12-13 13-50-52](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/b7edcf07-ed78-4bca-9a75-c542ee66d40f)          
+              ![Screenshot from 2023-12-13 13-51-44](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/989e3348-c12b-4054-9b86-66afd4e14f9e)                                                                                                                                                                                                                                                                                                                                                                                              
+  From the values we obtained we can conclude the input values between **VIH** and **VIL** provides the invalid output. so the region between **VIL** and **VIH** is defined as Noise region                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+#
+#
+## 4. Delay Analysis on CMOS
 
 
 
