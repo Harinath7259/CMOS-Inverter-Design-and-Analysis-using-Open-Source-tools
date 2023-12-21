@@ -28,8 +28,8 @@ Ngspice is the open source spice simulator for electric and electronic circuits.
 Magic is a VLSI layout tool.
 #
 #
-#
-#
+
+
 # Design and Analysis of NMOS
 #
 ## 1. NMOS design 
@@ -59,6 +59,60 @@ graph for variation of Id for constant **Vds** and different **Vgs** values
 #
 graph for variation of Id for constant **Vgs** and different **Vds** values
 ![Screenshot from 2023-12-08 16-35-57](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/a471f11b-c335-4e69-833e-8c32ca540e42)
+                                                                                                                                                                                                         
+And here we are analysing the two parameters gm and gds (transconductances) which are crucial in findng other characterstics
+
+gm is derivative of id current with constant **Vds** and different **Vgs** values i.e d(Id)/dVgs
+![Screenshot from 2023-12-10 19-32-14](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/575c4093-15d1-4731-9c78-e9b4d2c90f6f)
+
+gds or ro is derivative of id with constant **Vgs** and different **Vds** values i.e d(Id)/dVds
+![Screenshot from 2023-12-10 20-11-49](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/c5c9a57e-9728-4bd5-8aee-b555fad4b7b4)
+                                                                                                                                                                                                                                                                                                                                                                                                                  
+#
+#
+
+# Design and Analysis on PMOS
+#
+
+## 1. PMOS Design
+similarly I am designing the PMOS with given components
+                                                                                                                                                                                                   
+pfet_01v8.sym - pmos Transistor                                                                                                                                                                                                                                                                                                                                         
+vsource.sym   - voltage source                                                                                                                                                                       
+gnd.sym       - ground                                                                                                                                                                            
+
+This is the schematic which i created in xschem 
+![Screenshot from 2023-12-09 19-59-35](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/3a4c3e80-28e9-470e-ba0e-f81ebf52e69a)                                                                                             
+ Here i also added codeshown.sym and provided the code for dc sweep simulation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+## 2. DC sweep
+So after simulating the design of pmos with                                                                                                                                                             
+graph for variation of Id for constant **Vds** and different **Vgs** values                                                                                                                        
+graph for variation of Id for constant **vgs** and different **Vgs** values                                                                                                                               
+gm is derivative of id current with constant **Vds** and different **Vgs** values i.e d(Id)/dVgs                                                                                                      
+gds or ro is derivative of id with constant **Vgs** and different **Vds** values i.e d(Id)/dVds                                                                                                         
+#
+#
+#
+
+# CMOS Inverter Design and Analysis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+## 1. CMOS Inverter Design                                                                                                                                                                               
+CMOS stands for complementary Metal Oxide Semiconductur which means it consists of two complementary Mosfets i.e NMOS and PMOS . In Inverter design we have to keep Drain terminal of Nmos and Pmos get connected. The design should be like below                                                                                                                                                 
+![Screenshot from 2023-09-28 17-54-12](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/bfab72aa-d732-420b-b3f5-68a6625bff81)
+                                                   
+#
+#
+## 2. VTC Analysis of CMOS                                                                                                                                                                           
+VTC stands for Voltage Transfer Characterstics means how the input voltage transfer to output voltage . Here we are using a constant Vdd voltage 1.8v .                                                 
+Before that I am creating a symbol for this CMOS inverter by clicking "A" on my system .Then it will create a symbol and I can get it on my library  and use it for Schematic. Schematic od design before simulation.                                                                                                                                                                                  
+![Screenshot from 2023-09-28 17-53-57](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/8cc7e4d6-2975-4c45-9dbc-60582e5e7612)                                                                                                                                                                                                                           
+Characterstic curve after simulation could be like shown below                                                                                                                                                                                                                                                                                                                                                                
+#
+![Screenshot from 2023-12-12 16-26-38](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/32b057af-c525-4e30-adad-edb98fa07461)
+#
+#
+## 3. Delay Analysis of CMOS
+                                                                                                                                                                                                                                         
+
 
 
 
