@@ -93,6 +93,13 @@ gds or ro is derivative of id with constant **Vgs** and different **Vds** values
 #
 #
 #
+graph for variation of Id for constant **Vds** and different **Vgs** values 
+![image](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/476295c9-b459-455a-9c42-130eaa95f832)
+#
+#
+graph for variation of Id for constant **Vgs** and different **Vds** values
+![image](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/46e0e4aa-1848-4634-89a8-c79765e9d5cb)
+
 
 # CMOS Inverter Design and Analysis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 ## 1. CMOS Inverter Design                                                                                                                                                                               
@@ -146,6 +153,7 @@ Let us simulate the following schematic and find out the above parameters
 
 
 Here we are using transient analysis for finding required once 
+
 ![Screenshot from 2023-12-22 20-55-18](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/f859aadd-2067-436f-9fd9-694c664c71ec)
 ![Screenshot from 2023-12-23 11-51-07](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/6a0dfe82-99ce-4495-b316-4a177a1d45d6)
 
@@ -176,6 +184,23 @@ when keeping load capacitance of 1pf at output port
 futher vdd  supply decreases then delay further more increases
 
 ![Screenshot from 2023-12-24 10-47-21](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/24fe0e65-6ceb-49fa-8ecd-1279769bb2a8)
+
+
+
+#
+#
+## 5.Power analysis of CMOS inverter
+#
+The schematic for this power simulation is same as before but here we only perform transient simulation. And here are the some of the results i got after simulation.
+
+![Screenshot from 2023-12-27 08-59-12](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/7fb0636c-38aa-4271-aee5-4c0393760208)          ![Screenshot from 2023-12-27 09-00-40](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/302debb4-4cb5-4d01-88d8-dac39c0a1946)
+![Screenshot from 2023-12-27 09-13-59](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/a070320d-be8f-41b5-9400-86485229afb0)
+
+
+#
+so here i am getting around 81.5 microwatt average power. Here i am using a load capacitance of 0.5pf. But when i changed my load capacitance to 0.2pf then the power consumption got reduced
+
+![Screenshot from 2023-12-27 09-17-00](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/7d653a5f-aa84-4904-90c2-5f1de1d63fbb)
 
 
 
