@@ -129,6 +129,60 @@ then plot gain and vout in same graph to finout **VIL** and **VIH**
 #
 #
 ## 4. Delay Analysis on CMOS
+#
+
+![image](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/79978df7-62b6-475a-8e08-fb76808239df)
+firstly let us see definitions of some of the important parameters of delay in Cmos inverter
+                                                                                                                                                                                                            
+**1.Propagation delay High to Low (tpHL)** : delay when output switches from high-to-low, after input switches from low-to-high. 
+**2.Propagation delay Low to High (tpLH)** : delay when output switches from low-to-high, after input switches from high-to-low. 
+**3.Rise time (tR)** : Rise time (tr) is the time, during transition, when output switches from 10% to 90% of the maximum value.
+**4.Fall time (tF)** : Fall time (tf) is the time, during transition, when output switches from 90% to 10% of the maximum value.
+#
+#
+Let us simulate the following schematic and find out the above parameters
+![Screenshot from 2023-12-22 10-19-52](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/7b56f858-cc7d-4d80-8289-5523f3ef149c)
+![Screenshot from 2023-12-22 10-28-25](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/fe120c4b-29f7-402a-ba96-201704b0a17d)
+
+
+Here we are using transient analysis for finding required once 
+![Screenshot from 2023-12-22 20-55-18](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/f859aadd-2067-436f-9fd9-694c664c71ec)
+![Screenshot from 2023-12-23 11-51-07](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/6a0dfe82-99ce-4495-b316-4a177a1d45d6)
+
+
+
+factors of Rise time and Fall time
+**1.vdd supply** : delay decreases when vdd supply increases (inversly proportional)
+**2.silicon area** : delay decreas when silicon area increases (inversly proportional)
+**3.load capacitance** : delay increases when load capacitance increases (direcly proportional)
+
+#
+when vdd supply increases from 1.8 to 2v
+
+![Screenshot from 2023-12-23 11-46-42](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/0a5fddee-461a-43a1-a934-88102ab3fcc8)
+
+#
+when silicon area i.e W value of pfet and nfet increases 
+
+![Screenshot from 2023-12-23 12-22-43](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/b128bb5a-3277-41da-8ae4-a33769f4cb33)
+
+# 
+when keeping load capacitance of 1pf at output port
+
+![Screenshot from 2024-01-02 11-09-00](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/84909ca3-f069-4fa9-ab10-a90f6ef2ef7b)
+![Screenshot from 2023-12-24 10-35-11](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/2a24b75a-b0a6-4312-b6fd-f22f01cc81e9)
+![Screenshot from 2023-12-24 10-36-41](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/39662e49-2b78-40f2-9972-952092fbe81a)
+
+futher vdd  supply decreases then delay further more increases
+
+![Screenshot from 2023-12-24 10-47-21](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/24fe0e65-6ceb-49fa-8ecd-1279769bb2a8)
+
+
+
+
+
+
+
 
 
 
