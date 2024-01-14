@@ -201,6 +201,13 @@ The schematic for this power simulation is same as before but here we only perfo
 so here i am getting around 81.5 microwatt average power. Here i am using a load capacitance of 0.5pf. But when i changed my load capacitance to 0.2pf then the power consumption got reduced
 
 ![Screenshot from 2023-12-27 09-17-00](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/7d653a5f-aa84-4904-90c2-5f1de1d63fbb)
+#
+#
+## 6.Layout Design for CMOS Inverter
+#
+Here  I used Magic tool for CMOS Inverter Layout Design. Here I am Just Providing the Layout of CMOS in the way of how does it look like in the real world. If it is Possible,I will try to  mention the Steps how to design this Layout in Future days.                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                              
+![Screenshot from 2024-01-08 18-29-31](https://github.com/Harinath7259/CMOS-Inverter-Design-and-Analysis-using-Open-Source-tools/assets/146565066/2aaa4f48-a550-4276-84f5-6c1b11bc87b3)
 
 
 
